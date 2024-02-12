@@ -1,11 +1,12 @@
 <html>
-  <head>
-    
-  </head>
-  <body>
-    <script src="../browser.min.js"></script>
-    <script>
-      console.log(isBrowser());
-    </script>
-  </body>
+<head>
+  <script src="../browser.min.js"></script>
+</head>
+<body>
+  <div id="isbrowser"></div>
+  <script>
+    const { isBrowser } = require("../index.js");
+    console.log(isBrowser());
+  </script>
+</body>
 </html>
