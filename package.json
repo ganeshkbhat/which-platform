@@ -12,7 +12,7 @@
     "test": "mocha --reporter spec --recursive --timeout 60000",
     "browserify": "browserify index.js > browser.js",
     "uglify": "uglifyjs --compress --mangle reserved=['$','require','exports'] browser.js -o browser.min.js"
-  },
+  }, 
   "pre-commit": {
     "run": [
       "browserify",
