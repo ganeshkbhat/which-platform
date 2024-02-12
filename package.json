@@ -17,13 +17,11 @@
   "directories": {
     "test": "test"
   },
-  "pre-commit": {
-    "run": [
-      "browserify",
-      "uglify",
-      "test"
-    ]
-  },
+  "pre-commit": [
+    "browserify",
+    "uglify",
+    "test"
+  ],
   "devDependencies": {
     "@types/node": "^20.11.16",
     "browserify": "^17.0.0",
