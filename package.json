@@ -1,5 +1,5 @@
 {
-  "name": "isbrowser",
+  "name": "which-platform",
   "version": "1.0.0",
   "description": "check if an enviromment is a nodejs or browser enviroment",
   "main": "index.js",
