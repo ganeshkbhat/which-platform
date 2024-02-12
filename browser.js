@@ -17,6 +17,35 @@
 
 'use strict';
 
+
+/**
+ *
+ *
+ * @return {*} 
+ */
+function nodeVersion(full = true) {
+  return (!!full) ? process.versions.node : process.versions.node.split('.')[0];
+}
+
+function whichVersion() {
+  // Check if the environment is Node.js
+  if (typeof process === "object" &&
+    typeof require === "function") {
+    return nodeVersion(true);
+  }
+
+  // Check if the environment is a
+  // Service worker
+  if (typeof importScripts === "function") {
+    return window.navigator.userAgent;
+  }
+
+  // Check if the environment is a Browser
+  if (typeof window === "object") {
+    return window.navigator.userAgent;
+  }
+}
+
 function isBrowser() {
   // Check if the environment is Node.js
   if (typeof process === "object" &&
@@ -37,6 +66,7 @@ function isBrowser() {
 }
 
 module.exports.isBrowser = isBrowser;
+module.exports.whichVersion = whichVersion;
 module.exports.default = isBrowser;
 
 }).call(this)}).call(this,require('_process'))

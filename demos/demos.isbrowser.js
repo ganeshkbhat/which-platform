@@ -15,5 +15,7 @@
 
 'use strict';
 
-const { isBrowser } = require("../index.js");
+const { isBrowser, whichVersion } = require("../index.js");
 console.log(isBrowser());
+console.log(whichVersion(), typeof whichVersion(), Number(whichVersion()));
+console.log(whichVersion(), typeof whichVersion(true), Number(whichVersion(true)));

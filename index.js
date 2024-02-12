@@ -21,15 +21,15 @@
  *
  * @return {*} 
  */
-function nodeVersion() {
-  return process.versions.node.split('.')[0];
+function nodeVersion(full = true) {
+  return (!!full) ? process.versions.node : process.versions.node.split('.')[0];
 }
 
 function whichVersion() {
   // Check if the environment is Node.js
   if (typeof process === "object" &&
     typeof require === "function") {
-    return nodeVersion();
+    return nodeVersion(true);
   }
 
   // Check if the environment is a
