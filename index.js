@@ -15,6 +15,35 @@
 
 'use strict';
 
+
+/**
+ *
+ *
+ * @return {*} 
+ */
+function nodeVersion() {
+  return process.versions.node.split('.')[0];
+}
+
+function whichVersion() {
+  // Check if the environment is Node.js
+  if (typeof process === "object" &&
+    typeof require === "function") {
+    return nodeVersion();
+  }
+
+  // Check if the environment is a
+  // Service worker
+  if (typeof importScripts === "function") {
+    return window.navigator.userAgent;
+  }
+
+  // Check if the environment is a Browser
+  if (typeof window === "object") {
+    return window.navigator.userAgent;
+  }
+}
+
 function isBrowser() {
   // Check if the environment is Node.js
   if (typeof process === "object" &&
