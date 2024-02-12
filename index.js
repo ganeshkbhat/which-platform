@@ -1,13 +1,13 @@
 /**
  * 
- * Package: 
+ * Package: isbrowser
  * Author: Ganesh B
- * Description: 
- * Install: npm i  --save
- * Github: https://github.com/ganeshkbhat/
- * npmjs Link: https://www.npmjs.com/package/
- * File: 
- * File Description: 
+ * Description: check if an enviromment is a nodejs or browser enviroment
+ * Install: npm i isbrowser --save
+ * Github: https://github.com/ganeshkbhat/isbrowser
+ * npmjs Link: https://www.npmjs.com/package/isbrowser
+ * File: index.js
+ * File Description: file has isBrowser function that checks if an enviromment is a nodejs or browser enviroment
  * 
 */
 

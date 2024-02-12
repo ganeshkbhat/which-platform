@@ -15,7 +15,7 @@
 
 'use strict';
 
-import * as checks from "./index";
+import { default as checks } from "./index";
 
 export const isBrowser = checks.isBrowser
 export default isBrowser;
