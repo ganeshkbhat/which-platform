@@ -35,3 +35,4 @@ function isBrowser() {
 }
 
 module.exports.isBrowser = isBrowser;
+module.exports.default = isBrowser;
