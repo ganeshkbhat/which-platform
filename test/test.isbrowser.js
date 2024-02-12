@@ -16,7 +16,7 @@
 'use strict';
 
 const { expect } = require('chai');
-const { isBrowser } = require("../index.js");
+const { isBrowser, whichVersion } = require("../index.js");
 
 describe('[isBrowser tests] Tests to check if environment is browser or nodejs enviroment', () => {
 
@@ -58,6 +58,23 @@ describe('[isBrowser tests] Tests to check if environment is browser or nodejs e
     let actual = isBrowser();
     let expected = false;
     expect(actual).to.deep.equal(expected);
+  });
+
+});
+
+
+describe('[isBrowser tests] Tests to check whichVersion in browser and nodejs enviroment', () => {
+
+  before(() => {
+  });
+
+  after(() => {
+  });
+
+  it('should be negative for nodejs', () => {
+    let actual = whichVersion();
+    let expected = true;
+    expect(actual.includes("v")).to.deep.equal(expected);
   });
 
 });
