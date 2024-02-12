@@ -11,11 +11,12 @@
   "scripts": {
     "test": "mocha --reporter spec --recursive --timeout 60000",
     "browserify": "browserify index.js > browser.js",
-    "uglify": "uglifyjs --compress --mangle reserved=['$','require','exports'] browser.js -o browser.min.js"
+    "uglify": "uglifyjs --compress --mangle reserved=['$','require','exports'] browser.js -o browser.min.js",
+    "start": "lite-server"
   },
   "directories": {
     "test": "test"
-  }, 
+  },
   "pre-commit": {
     "run": [
       "browserify",
@@ -27,6 +28,7 @@
     "@types/node": "^20.11.16",
     "browserify": "^17.0.0",
     "chai": "^4.4.1",
+    "live-server": "^1.2.2",
     "mocha": "^10.2.0",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.4",
