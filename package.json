@@ -12,6 +12,9 @@
     "test": "mocha --reporter spec --recursive --timeout 60000",
     "browserify": "browserify index.js > browser.js",
     "uglify": "uglifyjs --compress --mangle reserved=['$','require','exports'] browser.js -o browser.min.js"
+  },
+  "directories": {
+    "test": "test"
   }, 
   "pre-commit": {
     "run": [
@@ -31,9 +34,6 @@
     "typescript": "^5.3.3",
     "uglify-js": "^3.17.4",
     "unimported": "^1.31.1"
-  },
-  "directories": {
-    "test": "test"
   },
   "repository": {
     "type": "git",
