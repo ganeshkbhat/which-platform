@@ -63,6 +63,10 @@ function isBrowser() {
   }
 }
 
-module.exports.isBrowser = isBrowser;
-module.exports.whichVersion = whichVersion;
-module.exports.default = isBrowser;
+
+if (!isBrowser()) {
+  module.exports.isBrowser = isBrowser;
+  module.exports.whichVersion = whichVersion;
+  module.exports.default = isBrowser;
+}
+
