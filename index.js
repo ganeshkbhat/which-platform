@@ -32,8 +32,7 @@ function whichVersion() {
     return nodeVersion();
   }
 
-  // Check if the environment is a
-  // Service worker
+  // Check if the environment is a Service worker
   if (typeof importScripts === "function") {
     return window.navigator.userAgent;
   }
@@ -51,8 +50,7 @@ function isBrowser() {
     return false;
   }
 
-  // Check if the environment is a
-  // Service worker
+  // Check if the environment is a Service worker
   if (typeof importScripts === "function") {
     return false;
   }
