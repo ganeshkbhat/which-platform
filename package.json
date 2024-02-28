@@ -35,12 +35,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ganeshkbhat/isbrowser.git"
+    "url": "git+https://github.com/ganeshkbhat/which-platform.git"
   },
   "bugs": {
-    "url": "https://github.com/ganeshkbhat/isbrowser/issues"
+    "url": "https://github.com/ganeshkbhat/which-platform/issues"
   },
-  "homepage": "https://github.com/ganeshkbhat/isbrowser.git#readme",
+  "homepage": "https://github.com/ganeshkbhat/which-platform.git#readme",
   "keywords": [
     "is browser environment",
     "is nodejs environment",
