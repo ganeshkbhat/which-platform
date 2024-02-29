@@ -1,11 +1,11 @@
 /**
  * 
- * Package: isbrowser
+ * Package: which-platform
  * Author: Ganesh B
  * Description: check if an enviromment is a nodejs or browser enviroment
- * Install: npm i isbrowser --save
- * Github: https://github.com/ganeshkbhat/isbrowser
- * npmjs Link: https://www.npmjs.com/package/isbrowser
+ * Install: npm i which-platform --save
+ * Github: https://github.com/ganeshkbhat/which-platform
+ * npmjs Link: https://www.npmjs.com/package/which-platform
  * File: index.js
  * File Description: file has isBrowser function that checks if an enviromment is a nodejs or browser enviroment
  * 
