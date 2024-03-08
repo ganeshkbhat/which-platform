@@ -110,5 +110,6 @@ if (!isBrowser()) {
   module.exports.whichVersion = whichVersion;
   module.exports.default = isBrowser;
   module.exports.nodeVersionLTS = nodeVersionLTS;
+  module.exports.nodeVersion = nodeVersion;
 }
 
