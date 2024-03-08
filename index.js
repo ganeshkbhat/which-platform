@@ -50,6 +50,14 @@ function isBrowser() {
   if (typeof window === "object") { return true; }
 }
 
+/**
+ *
+ *
+ * @return {*} 
+ */
+function nodeVersionLTS() {
+  return { lts: process.versions.node.split('.')[0], version: process.versions.node.split('.') };
+}
 
 /**
  *
@@ -101,5 +109,6 @@ if (!isBrowser()) {
   module.exports.isBrowser = isBrowser;
   module.exports.whichVersion = whichVersion;
   module.exports.default = isBrowser;
+  module.exports.nodeVersionLTS = nodeVersionLTS;
 }
 
